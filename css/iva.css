@@ -1,0 +1,464 @@
+@font-face {
+    font-family: 'Adamina';
+    src: url('../assets/font/Adamina/Adamina-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Afacad';
+    src: url('../assets/font/Afacad/Afacad-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Great';
+    src: url('../assets/font/great_vibes/GreatVibes-Regular\ \(1\).ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: rgba(255, 254, 243, 1);
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px;
+
+
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.nav-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    display: block;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-family: Afacad, sans-serif;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: rgb(214, 140, 140);
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity .2s ease;
+}
+
+.menu-links a:hover {
+    color: rgb(117, 56, 83);
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.logo-iva-header {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.nomeClinica {
+    font-family: Great;
+}
+
+.carmin {
+    font-weight: 100;
+    color: rgba(129, 25, 4, 1);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meu-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    z-index: 0;
+
+    opacity: 50%;
+}
+
+.txt-inicio {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    gap: 15px;
+    font-family: adamina;
+    color: rgb(101, 28, 13);
+}
+
+.txt-inicio h1 {
+    font-family: great;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.txt-inicio h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    font-size: 15px;
+}
+
+.deitado {
+    align-items: end;
+    width: 20px;
+    height: 1px;
+    rotate: 90deg;
+    background-color: rgba(129, 25, 4, 1);
+    ;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo-sobre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(212, 131, 131);
+    padding-top: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.coral {
+    width: 20px;
+    height: 1px;
+    background-color: rgb(235, 138, 143);
+}
+
+.sobre {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: afacad;
+}
+
+
+.bio-sobre {
+    width: 80%;
+    max-width: 800px;
+    text-align: justify;
+    padding-bottom: 60px;
+    font-size: 18px;
+
+}
+
+.beneficios {
+    background-color: rgba(218, 172, 134, 0.372);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: adamina;
+
+}
+
+.titulo-beneficios {
+    align-items: center;
+    font-size: 10px;
+    padding-top: 40px;
+}
+
+.cards-beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.card-beneficio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-beneficios {
+    width: 70px;
+    background-color: rgb(250, 247, 247);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.img-beneficios:hover {
+    background-color: rgb(127, 107, 86);
+}
+
+.txt-beneficio {
+    text-align: center;
+    width: 150px;
+    font-weight: 500;
+    font-family: afacad;
+    font-size: 20px;
+}
+
+.cards-profi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 40px;
+    font-family: afacad;
+}
+
+.titulo-profi {
+    h1 {
+        font-weight: 100;
+    }
+
+    h5 {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+}
+
+.img-correto {
+    width: 15px;
+    height: 15px;
+}
+
+.procedimentos {
+    margin-top: 10px;
+    padding-bottom: 60px;
+}
+
+.card-procedimento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.foto-profi {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+#foto-profi {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height:260px;
+    background-color: #a974744f;
+    box-shadow: 5px 5px 20px 5px rgba(186, 164, 165, 0.785);
+
+    padding: 20px;
+    border-radius: 100%;
+
+}
+
+#foto-profi {
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: afacad;
+    background-color:  rgba(218, 172, 134, 0.633);
+
+}
+.flor{
+    margin-top: 20px;
+    width: 50px;
+}
+
+.img-footer {
+    width: 220px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.cuidados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuidados p {
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.foto-contato {
+    width: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.redes_sociais {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.contato:hover{
+        transform: scale(1.2);
+}
+
+@media (max-width: 650px) {
+    .nav-menu {
+        margin-left: auto;
+    }
+
+    .menu-button {
+        display: flex;
+        position: relative;
+        z-index: 20;
+    }
+
+    .menu-links {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        top: calc(100% + 10px);
+        right: 0;
+        min-width: 165px;
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background-color: rgba(252, 229, 229, 0.586);
+        border: 1px solid rgba(211, 108, 149, 0.45);
+        box-shadow: 0 8px 20px rgba(232, 204, 144, 0.12);
+        border-radius: 4px;
+    }
+
+    .menu-links.open {
+        display: flex;
+    }
+
+    .menu-links a {
+        padding: 12px 18px;
+        font-size: 12px;
+    }
+
+    .menu-links a:hover {
+        background-color: rgba(221, 216, 180, .35);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .menu-links a {
+        font-size: 17px;
+    }
+
+    .cards-beneficios {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cards-profi {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+
+    .card-profi {
+        padding-left: 50px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+    }
+}

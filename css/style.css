@@ -1,0 +1,639 @@
+@font-face {
+    font-family: 'Adamina';
+    src: url('../assets/font/Adamina/Adamina-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Afacad';
+    src: url('../assets/font/Afacad/Afacad-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Sans sc';
+    src: url('../assets/font/Alegreya_Sans_SC/AlegreyaSansSC-Light.ttf');
+}
+
+@font-face {
+    font-family: Carmorant italic;
+    src: url(../assets/font/great_vibes/CormorantGaramond-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Carmorant;
+    src: url(../assets/font/great_vibes/CormorantGaramond-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+        
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body {
+    background-color: rgba(255, 254, 243, 1);
+}
+
+.logo-essen-header {
+    width: 60px;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.hr-header {
+    border: none;
+    width: 100%;
+    background-color: #b8af9675;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+
+}
+
+.nomeClinica {
+    font-family: Sans sc;
+
+    p {
+        font-size: 15px;
+        color: rgba(68, 96, 51, 1);
+    }
+
+    h1 {
+        color: rgba(148, 134, 29, 1);
+        font-size: 23px;
+    }
+}
+
+.menu {
+    width: 30px;
+    border: none;
+    margin-right: 10px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.slidePodo {
+    width: 160px;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    font-family: Carmorant;
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: 100;
+    gap: 10px;
+
+    p {
+  font-family: afacad;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+
+.verde {
+    color: rgba(53, 86, 33, 1);
+    font-weight: 900;
+
+}
+
+.dourado {
+    color: rgba(148, 134, 29, 1);
+    font-family: camorant;
+    font-weight: 100;
+}
+
+
+    .missao {
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(138, 161, 139, 0.366);
+        font-family: Adamina;
+        font-size: 13px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+}
+
+
+
+
+hr {
+    background-color: #8bb08e;
+    border: none;
+    height: 1px;
+    width: 20px;
+}
+
+.titulo-missao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: afacad;
+    color: #608963;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.italico{
+    font-size: 20px;
+    font-family: Carmorant;
+    font-weight: 600;
+    font-style: italic
+}
+
+
+#flor-branca1 {
+    width: 200px;
+    position: absolute;
+    left: -70px;
+    bottom: 0;
+    opacity: 0.60;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+#flor-branca2 {
+    width: 200px;
+    position: absolute;
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.40;
+    z-index: 1;
+    pointer-events: none;
+}
+.txt-missao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: afacad;
+    padding: 10px;
+    font-size: 15px;
+    color: #000000;
+    z-index: 3;
+}
+
+.cards-missao {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card-m {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    width: 160px;
+    height: 65px;
+    box-shadow: 5px 5px 20px 10px rgb(180, 188, 174);
+    background-color: #889482;
+    
+    p {
+        font-family: afacad;
+        width: 150px;
+        font-weight: 100;
+        font-size: 15px;
+        color: #000000;
+    }
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(226, 238, 225);
+    border-radius: 100%;
+    padding: 5px;
+    position: relative;
+    bottom: 10px;
+    
+    
+    
+}
+
+.card-m:hover{
+    background-color: rgba(138, 161, 139, 0.826);
+}
+
+
+.profi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ #foto-iva{
+        height: 180px;
+    }
+
+.profissionais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.titulo-profissionais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+
+.card-profissional {
+    color: rgb(36, 85, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bfba9a6c;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 50px;
+}
+
+.card-profissional:hover{
+    box-shadow:  5px 5px 20px #eee8d4;
+    transform: scale(1.05);
+
+}
+
+@keyframes flutuar {
+    
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+
+
+
+.foto-profissional {
+    
+    animation: flutuar 2s ease-in-out infinite;
+    width: 180px;
+    height: 200px;
+    background-color: rgb(160, 158, 158);
+    margin-left: 10px;
+    border-radius: 100px 50px 50px 50px;
+    box-shadow: 5px 5px 30px 10px #fdffed;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.dados {
+    display: flex;
+    align-items: center;
+    font-family: afacad;
+
+
+    h1 {
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 17px;
+        color: rgba(148, 134, 29, 1);
+        text-align: start;
+    }
+
+}
+
+.logo-profi {
+    width: 60px;
+    height: 55px;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.bio {
+
+    gap: 10px;
+    margin-left: 10px;
+    max-width: 180px;
+    font-family: afacad;
+    font-weight: 500;
+    text-align: start;
+
+}
+
+.saber-mais {
+    background-color: rgb(72, 90, 60);
+    padding: 7px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: afacad;
+    margin-top: 10px;
+    color: #fff;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: cente;
+    background-color: rgb(49, 70, 41);
+    margin-top: 40px;
+    font-family: afacad;
+    color: rgb(255, 255, 255);
+
+    h1 {
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(201, 203, 200);
+    }
+    p{
+            font-weight: 900;
+        color: #fff;
+    }
+}
+
+
+.hr-footer{
+    display: none;
+}
+
+.informacoes-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 10px;
+    gap: 40px;
+
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-top: 40px;
+    font-family: sans sc;
+
+    font-family: sans sc;
+    p {
+        font-size: 20px;
+    }
+}
+
+.localizacao {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        width: 300px;
+    }
+
+}
+
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.hora {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.negrito {
+    font-weight: 700;
+}
+
+
+.nav-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    display: block;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-family: Afacad, sans-serif;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: rgba(53, 86, 33, 1);
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity .2s ease;
+}
+
+.menu-links a:hover {
+    opacity: .65;
+}
+
+@media (max-width: 650px) {
+    .nav-menu {
+        margin-left: auto;
+    }
+
+    .menu-button {
+        display: flex;
+        position: relative;
+        z-index: 20;
+    }
+
+    .menu-links {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        top: calc(100% + 10px);
+        right: 0;
+        min-width: 165px;
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background-color: rgba(255, 254, 243, 1);
+        border: 1px solid rgba(184, 175, 150, .45);
+        box-shadow: 0 8px 20px rgba(53, 86, 33, .12);
+        border-radius: 4px;
+    }
+
+    .menu-links.open {
+        display: flex;
+    }
+
+    .menu-links a {
+        padding: 12px 18px;
+        font-size: 12px;
+    }
+
+    .menu-links a:hover {
+        background-color: rgba(221, 216, 180, .35);
+        opacity: 1;
+    }
+
+    
+}
+
+/* Tablet */
+@media (min-width: 700px) {
+
+    .home{
+        display: flex;
+        justify-content: space-between;
+    }
+    .slidePodo{
+        width: auto;
+        height: 50%;
+    }
+    .verde{
+        font-size: 50px;
+    }
+    .dourado{
+        font-size: 40px;
+    }
+    .texto p{
+        font-size: 25px;
+    }
+    
+    .missao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .titulo-missao{
+        font-size: 30px;
+    }
+    .italico{
+        font-size: 30px;
+    }
+
+    .txt-missao{
+        font-size: 20px;
+        width: 600px;
+    }
+    .card-m p{
+        font-size: 17px;
+    }
+    .card-profissional{
+        display: flex;
+        flex-direction: row;
+        width: 700px;
+    }
+    .foto-profissional{
+        margin-right: 20px;
+
+    }
+    .bio{
+        max-width: 600px;
+        font-size: 22px;
+    }
+    
+    
+    .informacoes-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        
+    }
+    
+    .contato a:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    .localizacao a:hover {
+        color: rgb(255, 255, 255);
+        
+    }
+    
+
+   
+    .hr-footer{
+        align-items: center;
+        rotate: 90deg;
+        width: 100px;
+        height: 1px;
+        display: block;
+    }
+}

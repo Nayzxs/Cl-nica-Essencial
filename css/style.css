@@ -26,10 +26,10 @@
 * {
     padding: 0;
     margin: 0;
-        
+
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -108,7 +108,7 @@ button {
     gap: 10px;
 
     p {
-  font-family: afacad;
+        font-family: afacad;
         font-weight: 500;
         font-size: 15px;
     }
@@ -127,14 +127,14 @@ button {
 }
 
 
-    .missao {
-        position: relative;
-        overflow: hidden;
-        background-color: rgba(138, 161, 139, 0.366);
-        font-family: Adamina;
-        font-size: 13px;
-        padding-bottom: 50px;
-        padding-top: 50px;
+.missao {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(138, 161, 139, 0.366);
+    font-family: Adamina;
+    font-size: 13px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 
@@ -159,7 +159,7 @@ hr {
 
 }
 
-.italico{
+.italico {
     font-size: 20px;
     font-family: Carmorant;
     font-weight: 600;
@@ -188,6 +188,7 @@ hr {
     z-index: 1;
     pointer-events: none;
 }
+
 .txt-missao {
     display: flex;
     flex-direction: column;
@@ -219,11 +220,11 @@ hr {
     height: 65px;
     box-shadow: 5px 5px 20px 10px rgb(180, 188, 174);
     background-color: #889482;
-    
+
     p {
         font-family: afacad;
         width: 150px;
-        font-weight: 100;
+        font-weight: 500;
         font-size: 15px;
         color: #000000;
     }
@@ -237,12 +238,12 @@ hr {
     padding: 5px;
     position: relative;
     bottom: 10px;
-    
-    
-    
+
+
+
 }
 
-.card-m:hover{
+.card-m:hover {
     background-color: rgba(138, 161, 139, 0.826);
 }
 
@@ -254,9 +255,15 @@ hr {
     justify-content: center;
 }
 
- #foto-iva{
-        height: 180px;
-    }
+#foto-iva {
+    height: 180px;
+}
+
+#foto-gardenia {
+    width: 180px;
+    height: 230px;
+}
+
 
 .profissionais {
     display: flex;
@@ -289,19 +296,19 @@ hr {
     border-radius: 50px;
 }
 
-.card-profissional:hover{
-    box-shadow:  5px 5px 20px #eee8d4;
+.card-profissional:hover {
+    box-shadow: 5px 5px 20px #eee8d4;
     transform: scale(1.05);
 
 }
 
 @keyframes flutuar {
-    
+
     0%,
     100% {
         transform: translateY(0);
     }
-    
+
     50% {
         transform: translateY(-5px);
     }
@@ -312,15 +319,28 @@ hr {
 
 
 .foto-profissional {
-    
     animation: flutuar 2s ease-in-out infinite;
-    width: 180px;
-    height: 200px;
+    width: 200px;
+    height: 220px;
     background-color: rgb(160, 158, 158);
     margin-left: 10px;
     border-radius: 100px 50px 50px 50px;
     box-shadow: 5px 5px 30px 10px #fdffed;
 }
+
+
+
+#foto-iva {
+    height: 210px;
+    width: 210px;
+}
+
+#foto-gardenia {
+    width: 180px;
+    height: 240px;
+}
+
+
 
 .informacoes {
     display: flex;
@@ -398,14 +418,15 @@ footer {
         text-decoration: none;
         color: rgb(201, 203, 200);
     }
-    p{
-            font-weight: 900;
+
+    p {
+        font-weight: 900;
         color: #fff;
     }
 }
 
 
-.hr-footer{
+.hr-footer {
     display: none;
 }
 
@@ -429,6 +450,7 @@ footer {
     font-family: sans sc;
 
     font-family: sans sc;
+
     p {
         font-size: 20px;
     }
@@ -548,66 +570,76 @@ footer {
         opacity: 1;
     }
 
-    
+
 }
 
 /* Tablet */
 @media (min-width: 700px) {
 
-    .home{
+    .home {
         display: flex;
         justify-content: space-between;
     }
-    .slidePodo{
+
+    .slidePodo {
         width: auto;
         height: 50%;
     }
-    .verde{
+
+    .verde {
         font-size: 50px;
     }
-    .dourado{
+
+    .dourado {
         font-size: 40px;
     }
-    .texto p{
+
+    .texto p {
         font-size: 25px;
     }
-    
-    .missao{
+
+    .missao {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .titulo-missao{
-        font-size: 30px;
-    }
-    .italico{
+
+    .titulo-missao {
         font-size: 30px;
     }
 
-    .txt-missao{
+    .italico {
+        font-size: 30px;
+    }
+
+    .txt-missao {
         font-size: 20px;
         width: 600px;
     }
-    .card-m p{
+
+    .card-m p {
         font-size: 17px;
     }
-    .card-profissional{
+
+    .card-profissional {
         display: flex;
         flex-direction: row;
         width: 700px;
     }
-    .foto-profissional{
+
+    .foto-profissional {
         margin-right: 20px;
 
     }
-    .bio{
+
+    .bio {
         max-width: 600px;
         font-size: 22px;
     }
-    
-    
+
+
     .informacoes-footer {
         display: flex;
         flex-direction: row;
@@ -615,21 +647,21 @@ footer {
         align-items: center;
         margin-top: 50px;
         padding-bottom: 50px;
-        
+
     }
-    
+
     .contato a:hover {
         color: rgb(255, 255, 255);
     }
-    
+
     .localizacao a:hover {
         color: rgb(255, 255, 255);
-        
-    }
-    
 
-   
-    .hr-footer{
+    }
+
+
+
+    .hr-footer {
         align-items: center;
         rotate: 90deg;
         width: 100px;

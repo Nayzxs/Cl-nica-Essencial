@@ -242,6 +242,7 @@ button {
     position: relative;
     overflow: hidden;
 
+
 }
 
 .box-video video {
@@ -309,6 +310,10 @@ button {
     background-color: rgb(177, 177, 177);
 }
 
+.elfsight-app-56b8f196-f71f-473f-a272-3be5f6bcacd1{
+    font-family: afacad;
+    margin-top: 20px;
+}
 
 
 footer {

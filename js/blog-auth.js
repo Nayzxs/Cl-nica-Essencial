@@ -1,1 +1,59 @@
-import {auth,configured,adminUID,GoogleAuthProvider,signInWithPopup,onAuthStateChanged,signOut} from './blog-common.js';const btn=document.getElementById('google-login'),status=document.getElementById('login-status');if(!configured){btn.disabled=true;status.textContent='O acesso será liberado após configurar o Firebase e a conta administradora.'}else{onAuthStateChanged(auth,async user=>{if(user?.uid===adminUID){location.replace('painel-blog.html')}else if(user){await signOut(auth);status.textContent='Esta conta não tem autorização para administrar o blog.'}});btn.onclick=async()=>{try{status.textContent='Abrindo sua conta Google…';const result=await signInWithPopup(auth,new GoogleAuthProvider());if(result.user.uid!==adminUID){await signOut(auth);status.textContent='Esta conta não tem autorização.';return}location.href='painel-blog.html'}catch(e){console.error(e);status.textContent='Não foi possível entrar. Confira se o login Google está habilitado.'}}}
+
+import {
+  auth,
+  configured,
+  isAdmin,
+  GoogleAuthProvider,
+  signInWithPopup,
+  onAuthStateChanged,
+  signOut
+} from './blog-common.js';
+
+const btn = document.getElementById('google-login');
+const status = document.getElementById('login-status');
+
+if (!configured) {
+  btn.disabled = true;
+  status.textContent = 'Configure o Firebase para ativar o login.';
+} else {
+
+  onAuthStateChanged(auth, async user => {
+    if (isAdmin(user)) {
+      location.replace('painel-blog.html');
+      return;
+    }
+
+    if (user) {
+      await signOut(auth);
+      status.textContent = 'Esta conta não tem autorização.';
+    }
+  });
+
+  btn.onclick = async () => {
+    btn.disabled = true;
+
+    try {
+      status.textContent = 'Abrindo sua conta Google...';
+
+      const provider = new GoogleAuthProvider();
+      const result = await signInWithPopup(auth, provider);
+
+      if (!isAdmin(result.user)) {
+        await signOut(auth);
+        status.textContent = 'Esta conta não tem autorização.';
+        return;
+      }
+
+      location.href = 'painel-blog.html';
+
+    } catch (error) {
+      console.error(error);
+
+      status.textContent =
+        'Não foi possível entrar com Google. Tente novamente.';
+
+    } finally {
+      btn.disabled = false;
+    }
+  };
+}

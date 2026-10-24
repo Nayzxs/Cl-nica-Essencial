@@ -1,0 +1,70 @@
+<!doctype html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Administrar blog | Clínica Essencial</title><link rel="icon" href="../assets/icons/logo_essencial.svg"><link rel="stylesheet" href="../css/essencial.css"><link rel="stylesheet" href="../css/blog.css"></head><body><header>
+        <div class="head">
+            <a href="../index.html" class="logo-header">
+                <img class="logo-iva-header" src="../assets/icons/logo_essencial.svg" alt="">
+            </a>
+            <div class="nomeClinica">
+                <p class="verde">CLÍNICA</p>
+                <h1 class="dourado">ESSENCIAL</h1>
+            </div>
+        </div>
+
+
+        <nav class="nav-menu" aria-label="Navegação principal">
+            <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menu-links">
+                <img class="menu" src="../assets/icons/menu.svg" alt="">
+            </button>
+            <div class="menu-links" id="menu-links">
+                <a href="../index.html">INICIO</a>
+                <a href="essencial.html#procedimento">PROCEDIMENTOS</a>
+                <a href="essencial.html#contato">CONTATO</a>
+                <a href="blog.html">BLOG</a>
+                <a class="acesso-blog" href="entrar.html">ENTRAR</a>
+            </div>
+        </nav>
+
+    </header><main class="blog-main"><section class="admin-blog"><div class="admin-heading"><div><span class="blog-kicker">ÁREA RESTRITA</span><h1>Publicar artigo</h1></div><button id="sair" type="button" class="blog-text-button">Sair</button></div><p id="admin-status" role="status" class="blog-aviso">Verificando acesso…</p><div id="admin-restrito" hidden><div class="admin-columns"><form id="form-post" class="admin-form"><label>Título do artigo<input id="post-titulo" maxlength="140" required placeholder="Digite o título"></label><label>Resumo<input id="post-resumo" maxlength="240" required placeholder="Breve apresentação do artigo"></label><label>Categoria<input id="post-categoria" maxlength="60" placeholder="Ex.: Cuidados com os pés"></label><label>Imagem de capa<input id="post-imagem" type="file" accept="image/png,image/jpeg,image/webp"><small>JPG, PNG ou WebP até 3 MB. O envio direto requer o Firebase Storage configurado.</small></label><label>Ou use o endereço da imagem<input id="post-imagem-url" type="url" placeholder="https://site.com/foto.jpg"><small>Use uma imagem que já esteja disponível publicamente na internet.</small></label><div id="post-imagem-preview" class="post-imagem-preview" hidden><img id="post-imagem-visualizacao" alt="Prévia da capa do artigo"><div class="post-imagem-opcoes"><button type="button" id="post-imagem-trocar" class="blog-text-button">Trocar foto</button><button type="button" id="post-imagem-remover" class="blog-text-button">Remover foto</button></div></div><div><span class="admin-label">Conteúdo</span><div class="editor-toolbar" role="toolbar" aria-label="Formatação do artigo"><button type="button" data-format="bold" title="Negrito"><b>B</b></button><button type="button" data-format="italic" title="Itálico"><i>I</i></button><button type="button" data-format="underline" title="Sublinhado"><u>U</u></button><button type="button" data-format="formatBlock" data-value="h2" title="Subtítulo">H2</button><button type="button" data-format="formatBlock" data-value="p" title="Parágrafo">¶</button><button type="button" data-format="insertUnorderedList" title="Lista">☷</button><button type="button" data-format="createLink" title="Inserir link">↗</button></div><div id="post-conteudo" class="editor-corpo" contenteditable="true" role="textbox" aria-label="Conteúdo do artigo" aria-multiline="true" data-placeholder="Escreva aqui o conteúdo do seu artigo…"></div></div><label>Fontes e referências<textarea id="post-fontes" rows="4" placeholder="Uma referência por linha. Para links, use https://..."></textarea><small>Cada fonte aparecerá no final do artigo.</small></label><div class="admin-actions"><button type="button" id="cancelar-edicao" class="blog-text-button" hidden>Cancelar edição</button><button class="blog-button" id="publicar" type="submit">Publicar artigo</button></div></form><aside class="admin-posts"><h2>Artigos publicados</h2><div id="lista-admin"><p class="blog-status">Carregando…</p></div></aside></div></div></section></main><footer>
+        <div class="logo-footer">
+            <img src="../assets/icons/logo_essencial.svg" alt="">
+            <div class="nome-footer">
+                <p class="verde">CLÍNICA</p>
+                <h1 class="dourado">ESSENCIAL</h1>
+            </div>
+        </div>
+
+        <div class="informacoes-footer">
+            <div class="localizacao">
+                <h1>Localização</h1>
+                <a href="https://maps.app.goo.gl/9DTfcCoNBv1RavGg7">SHIS QI 09, conjunto 18 SHIS QI 09, CONJUNTO 18,
+                    BLOCO “B”, SALA 105, LAGO SUL, EM, Brasília
+                    - DF,
+                    71625-045 </a>
+            </div>
+
+            <hr class="linha">
+            <div class="horario">
+                <h1>Horário de atendimento</h1>
+                <div class="hora">
+                    <p> <span class="negrito"> Segunda a Sexta</span> <br>
+                        09h ás 18h</p>
+                    <p> <span class="negrito">Sábado</span> <br>
+                        09h ás 14h</p>
+                </div>
+            </div>
+            <hr class="linha">
+
+            <div id="contato" class="contato">
+                <a
+                    href="https://wa.me/556192141350?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos.">
+                    <img class="box-redes" src="../assets/icons/whatsapp.png" alt="" class="whatsapp">
+                </a>
+                <a href="https://www.instagram.com/clinica_essencial_podologia?stkn=NzFta3JteXpyaG42">
+                    <img class="box-redes" src="../assets/icons/instagram (1).png" alt="" calss="instagram">
+                </a>
+            </div>
+
+        </div>
+
+
+    </footer><script src="../js/menu.js"></script><script type="module" src="../js/blog-admin.js"></script></body></html>
